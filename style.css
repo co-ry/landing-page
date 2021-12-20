@@ -11,12 +11,16 @@ body {
     font-family: 'Roboto', arial;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 75px;
-
+    padding: 16px 75px;
 }
 
 .hero {
@@ -32,12 +36,12 @@ body {
 
 .hero-right {
     background-color: gray;
-    height: 150px;
-    width: 400px;
-    flex-shrink: 0;
     display: flex;
     padding: 75PX 75px;
-
+    margin: 75px;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 150px 400px;
 }
 
 h1 {
@@ -51,7 +55,7 @@ h1 {
     background-color: #1f2937;
 }
 
-.nav-left, .rectangle-head {
+.nav-left, .blue-head {
     font-size: 24px;
     color: #f9faf8;
     /* padding-left: 50px; */
@@ -64,33 +68,45 @@ h1 {
     color: #1f2937;
 }
 
-a, .text, .gray-image, .footer, .rectangle {
+a, .text, .gray-image, .footer, .blue {
     font-size: 18px;
     color: #e5e7eb;
-}
-
-.black {
-    display: flex;
-    
 }
 
 .boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
-.container {
+.image-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 16px;
     text-align: center;
+    flex-wrap: no-wrap;
 }
 
-.rectangle {
+.image-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding: 16px;
+}
+
+p {
+    display: flex;
+    f
+}
+
+.blue {
     background-color: #3882f6;
     display: flex;
     justify-content: space-between;
+    padding: 40px;
 }
 
 .gray {
@@ -100,7 +116,7 @@ a, .text, .gray-image, .footer, .rectangle {
 }
 
 .quote-text {
-    font-size: 36px;
+    font-size: 24px;
     font-style: italic;
     color: #1f2937;
     padding: 0 200px;
@@ -117,8 +133,16 @@ a, .text, .gray-image, .footer, .rectangle {
 }
 
 button {
-    color: #3882f6;
-    padding: 16px 32px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 8px 32px;
+    margin: 16px;
+    border-radius: 10px;
+    border-color: #f9faf8;
+}
+
+button:hover {
+    border-color: blue;
 }
 
 ul {
